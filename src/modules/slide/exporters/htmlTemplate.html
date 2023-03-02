@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{slide_title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp&display=block"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Two Tone&display=block"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body {
+        font-family: "Inter", sans-serif;
+        overflow-x: hidden;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 2em;
+        text-align: center;
+        white-space: pre-wrap;
+        word-break: break-all;
+        max-width: 80%;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 1.1em;
+      }
+
+      main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+
+        justify-content: center;
+        align-items: center;
+      }
+
+      .sections-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+      }
+
+      .sections-list li {
+        display: flex;
+        width: 250px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        word-break: break-all;
+        padding: 0.5em;
+        gap: 0.5em;
+
+        white-space: pre-wrap;
+      }
+
+      .section-icon {
+        font-size: 1em;
+        height: 10em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section-icon span {
+        font-size: 10em;
+      }
+
+      @media print {
+        html,
+        body {
+          width: 100%;
+          height: 100%;
+        }
+
+        main {
+          width: 100%;
+          height: 100%;
+        }
+
+        .sections-list {
+          flex-wrap: nowrap;
+        }
+
+        .sections-list li {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>{{slide_title}}</h1>
+      <ul class="sections-list">
+        <li>
+          <div class="section-icon">
+            <span class="{{section_0_icon_class}}"
+              >{{section_0_icon_name}}</span
+            >
+          </div>
+          <h2>{{section_0_title}}</h2>
+          <p>{{section_0_description}}</p>
+        </li>
+        <li>
+          <div class="section-icon">
+            <span class="{{section_1_icon_class}}"
+              >{{section_1_icon_name}}</span
+            >
+          </div>
+          <h2>{{section_1_title}}</h2>
+          <p>{{section_1_description}}</p>
+        </li>
+        <li>
+          <div class="section-icon">
+            <span class="{{section_2_icon_class}}"
+              >{{section_2_icon_name}}</span
+            >
+          </div>
+          <h2>{{section_2_title}}</h2>
+          <p>{{section_2_description}}</p>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
